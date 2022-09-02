@@ -87,7 +87,7 @@
             <div class="form-group">
                 <label for="serverSelected" class="col-sm-1 control-label">URL:</label>
                 <div class="col-sm-7">
-                    <input type="text" id="serverSelected" class="form-control" placeholder="ws://domain/path"/>
+                    <input type="text" id="serverSelected" class="form-control" placeholder="ws://domain/path" value="ws://192.168.0.201:38401/ws"/>
 
                 </div>
                 <div class="col-sm-1" style="margin-right: 10px;">
@@ -114,7 +114,7 @@
     </div>
     <!-- /.row -->
 
-    <textarea id="msgToServer" style="width: 700px; height: 300px" placeholder="Put your Message Here"></textarea>
+    <textarea id="msgToServer" style="width: 700px; height: 300px" placeholder="Put your Message Here">{"cmd":"Login","user":"admin","password":"brightway"}</textarea>
 
     <button type="button" class="btn btn-sm btn-success" onclick="sendMessage()">
         Send Message
